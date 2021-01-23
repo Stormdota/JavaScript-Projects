@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
 
-    <!-- Main Content--> 
+    <!-- Main Content-->
 
-    <div id="main-content"> 
-
-        
-
-
-
+    <div id="container">
+        <h3> Tip Calculator</h3>
+        <div id="amount"><label for="amt">Amount:</label>
+            <input type="text" id="amt" name="amt" placeholder="Enter the amount">
+        </div>
+        <div id="persons">
+            <label for="persons"> Number of person sharing the bill:</label>
+            <input type="text" placeholder="Enter the number of person sharing the bill">
+        </div>
+        <div id="quality">
+            <label for="service">How was the service?</label>
+            <select id="service">
+                <option value="excellent">Excellent (20%)</option>
+                <option value="good">Good (15%)</option>
+                <option value="excellent">Average (10%)</option>
+                <option value="excellent">Poor (5%)</option>
+            </select>
+        </div>
+        <button>Calculate Tip</button>
     </div>
-    
+
 </body>
 <script src="script.js"></script>
+
 </html>
