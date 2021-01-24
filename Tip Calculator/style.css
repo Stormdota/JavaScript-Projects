@@ -20,14 +20,16 @@ body{
 #container{
    display: flex;
     border: 1px solid white; 
-    border-radius: 25px;   
-    width: 600px;
-    height: 700px;
+    border-top-left-radius: 25px;   
+    border-top-right-radius: 25px;
+    width: 600px;   
     margin: auto;
     margin-top: 100px;
     background-color:ghostwhite;
     align-items: left;
-    flex-direction: column;   
+    flex-direction: column; 
+    min-height:fit-content;
+      
 }
 
 div > h3{
@@ -48,17 +50,50 @@ div{
 
 input{
     font-size: 1.1rem;
-    padding: 5px;  
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;  
 }
 
 input:focus{   
     outline: none;
 }
 
-option{
-
-    font-size: 1.1rem;
+#tips{
+    margin-top: 10px;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;    
+    background-color: #3498db;
+    cursor: pointer;
+    color: white;
 }
+
+#tips:hover{
+    transform: scale(1.02);
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+  #service{
+      font-size: 1.1rem;
+      font-weight: lighter;
+  }
+
+  #select{
+      font-weight: lighter;
+  }
+
+  div > p{
+      font-size: 1.2rem;
+      margin: 5px;
+      text-align: center;
+  }
+   
 
 
 

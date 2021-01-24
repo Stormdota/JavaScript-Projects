@@ -20,18 +20,22 @@
         </div>
         <div id="persons">
             <label for="persons"> Number of person sharing the bill:</label>
-            <input type="text" placeholder="Enter the number of person sharing the bill">
+            <input type="text" placeholder="Enter the number of person sharing the bill" id="pers">
         </div>
         <div id="quality">
             <label for="service">How was the service?</label>
             <select id="service">
-                <option value="excellent">Excellent (20%)</option>
-                <option value="good">Good (15%)</option>
-                <option value="excellent">Average (10%)</option>
-                <option value="excellent">Poor (5%)</option>
+                <option id="select" value="0" selected > Select an option</option>
+                <option value="0.20">Excellent (20%)</option>
+                <option value="0.15">Good (15%)</option>
+                <option value="0.10">Average (10%)</option>
+                <option value="0.05">Poor (5%)</option>
             </select>
         </div>
-        <button>Calculate Tip</button>
+        <div id="tip">
+            
+        </div>
+        <button id="tips" onclick="calculatetips()">Calculate Tip</button>
     </div>
 
 </body>
